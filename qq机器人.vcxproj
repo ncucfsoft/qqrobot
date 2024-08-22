@@ -1,0 +1,748 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{94FA8816-B5FC-4A72-9691-6169388B2632}</ProjectGuid>
+    <RootNamespace>晨风qq机器人</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\ATLMFC\INCLUDE;c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\INCLUDE;c:\项目代码\boost_1_46_1;c:\项目代码\静态库\CommonFunLib\lodehead;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;</IncludePath>
+    <LibraryPath>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\ATLMFC\LIB;c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\LIB;c:\项目代码\boost_1_46_1\stage\lib;c:\项目代码\静态库\CommonFunLib\lodehead;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\ATLMFC\INCLUDE;c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\INCLUDE;c:\项目代码\boost_1_46_1;c:\项目代码\静态库\CommonFunLib\lodehead;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;</IncludePath>
+    <LibraryPath>c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\ATLMFC\LIB;c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\LIB;c:\项目代码\boost_1_46_1\stage\lib;c:\项目代码\静态库\CommonFunLib\lodehead;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;</LibraryPath>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\项目代码\静态库\zlib;C:\项目代码\silk-arm-ios-master\src;C:\项目代码\silk-arm-ios-master\interface;C:\项目代码\安卓QQ机器人\5.1\proto\protobuf-2.6.0\src;googleproto;androidtcp;</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zm500 %(AdditionalOptions)</AdditionalOptions>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>boostlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>
+      </DelayLoadDLLs>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <OutputFile>c:\debug\晨风QQ聊天机器人.exe</OutputFile>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <ShowProgress>NotSet</ShowProgress>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\项目代码\静态库\zlib;C:\项目代码\silk-arm-ios-master\src;C:\项目代码\silk-arm-ios-master\interface;C:\项目代码\安卓QQ机器人\5.1\proto\protobuf-2.6.0\src;googleproto;androidtcp;</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zm500 %(AdditionalOptions)</AdditionalOptions>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>c:\项目代码\release files\晨风QQ机器人.exe</OutputFile>
+      <EntryPointSymbol>wWinMainCRTStartup</EntryPointSymbol>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DelayLoadDLLs>
+      </DelayLoadDLLs>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>libcd.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>"C:\项目代码\release files\测试文件大小.exe"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="res\bkgroud.bmp" />
+    <None Include="res\My.rc2" />
+    <None Include="res\xdd.ico" />
+    <None Include="Res\人品计算.txt" />
+    <None Include="Res\优先设定的回复内容.txt" />
+    <None Include="Res\周公解梦全集.txt" />
+    <None Include="Res\天气.txt" />
+    <None Include="Res\如何不注册也能玩成语接龙和修改名片.txt" />
+    <None Include="Res\姓名配对.txt" />
+    <None Include="Res\定时执行重新登录等指令.txt" />
+    <None Include="Res\帮助.txt" />
+    <None Include="Res\快递编码.txt" />
+    <None Include="Res\成语大全.txt" />
+    <None Include="Res\抢答题.txt" />
+    <None Include="Res\抽签.txt" />
+    <None Include="res\晨风QQ机器人.ico" />
+    <None Include="Res\晨风qq机器人使用说明.txt" />
+    <None Include="Res\晨风机器人变量大全.txt" />
+    <None Include="Res\更多个性配置.txt" />
+    <None Include="Res\机器人管理员命令大全.txt" />
+    <None Include="Res\登录1.bmp" />
+    <None Include="Res\登录2.bmp" />
+    <None Include="Res\窗口布局.txt" />
+    <None Include="Res\群聊时不回复或者没显示回复的处理办法.txt" />
+    <None Include="Res\背景图片.jpg" />
+    <None Include="Res\自动回复设置文件.txt" />
+    <None Include="Res\自定义小游戏.txt" />
+    <None Include="Res\自定义帮助文件.重命名.txt" />
+    <None Include="Res\自定义广告尾巴.txt" />
+    <None Include="Res\输入替换.txt" />
+    <None Include="Res\输出替换.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AcceptRequestDlg.h" />
+    <ClInclude Include="AdminList.h" />
+    <ClInclude Include="androidtcp\AndroidQQ.h" />
+    <ClInclude Include="androidtcp\crypt.h" />
+    <ClInclude Include="androidtcp\formatstruct.h" />
+    <ClInclude Include="androidtcp\JceInputStream.h" />
+    <ClInclude Include="androidtcp\JceOutputStream.h" />
+    <ClInclude Include="androidtcp\JceStruct_Factory.h" />
+    <ClInclude Include="androidtcp\publicshare.h" />
+    <ClInclude Include="androidtcp\_Pack.h" />
+    <ClInclude Include="androidtcp\_Unpack.h" />
+    <ClInclude Include="AutoReplyRule.h" />
+    <ClInclude Include="BCMenu.h" />
+    <ClInclude Include="BtnST.h" />
+    <ClInclude Include="CeXDib.h" />
+    <ClInclude Include="ColorInput.h" />
+    <ClInclude Include="ColorSMSInput.h" />
+    <ClInclude Include="ColorURLInput.h" />
+    <ClInclude Include="FontInfSetDlg.h" />
+    <ClInclude Include="googleproto\msg.AppOrDeny.pb.h" />
+    <ClInclude Include="googleproto\msg.AppOrDenyFriend.pb.h" />
+    <ClInclude Include="googleproto\msg.AppOrDenyFriendDetail.pb.h" />
+    <ClInclude Include="googleproto\msg.Approve.pb.h" />
+    <ClInclude Include="googleproto\msg.ApproveFriend.pb.h" />
+    <ClInclude Include="googleproto\msg.DarenRank.pb.h" />
+    <ClInclude Include="googleproto\msg.DownPCGroupPVoice.pb.h" />
+    <ClInclude Include="googleproto\msg.DownPCGroupPVoiceDetail.pb.h" />
+    <ClInclude Include="googleproto\msg.DownPCGroupResultPVoice.pb.h" />
+    <ClInclude Include="googleproto\msg.DownPCGroupResultPVoiceDetail.pb.h" />
+    <ClInclude Include="googleproto\msg.DownPVoice.pb.h" />
+    <ClInclude Include="googleproto\msg.DownPVoiceDetail.pb.h" />
+    <ClInclude Include="googleproto\msg.DownPVoiceDetail2.pb.h" />
+    <ClInclude Include="googleproto\msg.DownResultPVoice.pb.h" />
+    <ClInclude Include="googleproto\msg.DownResultPVoiceDetail.pb.h" />
+    <ClInclude Include="googleproto\msg.DownResultPVoiceDetail2.pb.h" />
+    <ClInclude Include="googleproto\msg.Face.pb.h" />
+    <ClInclude Include="googleproto\msg.FaceWord.pb.h" />
+    <ClInclude Include="googleproto\msg.FeedbackPrivateImage.pb.h" />
+    <ClInclude Include="googleproto\msg.FeedbackPrivateImageDetail.pb.h" />
+    <ClInclude Include="googleproto\msg.FeedbackPrivateImageDetail2.pb.h" />
+    <ClInclude Include="googleproto\msg.Font.pb.h" />
+    <ClInclude Include="googleproto\msg.Gift.pb.h" />
+    <ClInclude Include="googleproto\msg.Image.pb.h" />
+    <ClInclude Include="googleproto\msg.JoinGroup.pb.h" />
+    <ClInclude Include="googleproto\msg.KickInf.pb.h" />
+    <ClInclude Include="googleproto\msg.KickInf_2.pb.h" />
+    <ClInclude Include="googleproto\msg.KickoutFromDis.pb.h" />
+    <ClInclude Include="googleproto\msg.KickStruct.pb.h" />
+    <ClInclude Include="googleproto\msg.KickStruct_2.pb.h" />
+    <ClInclude Include="googleproto\msg.KickStruct_5.pb.h" />
+    <ClInclude Include="googleproto\msg.KickStruct_5_2.pb.h" />
+    <ClInclude Include="googleproto\msg.LatestSysP.pb.h" />
+    <ClInclude Include="googleproto\msg.LatestSysP_10.pb.h" />
+    <ClInclude Include="googleproto\msg.LatestSysP_10_50.pb.h" />
+    <ClInclude Include="googleproto\msg.LatestSysP_msg.pb.h" />
+    <ClInclude Include="googleproto\msg.Money.pb.h" />
+    <ClInclude Include="googleproto\msg.Moneydetail.pb.h" />
+    <ClInclude Include="googleproto\msg.Moneydetail2.pb.h" />
+    <ClInclude Include="googleproto\msg.Msg_Context.pb.h" />
+    <ClInclude Include="googleproto\msg.Msg_Context_Arr.pb.h" />
+    <ClInclude Include="googleproto\msg.Msg_Context_Arr_Base.pb.h" />
+    <ClInclude Include="googleproto\msg.Msg_FriendRecv_Head.pb.h" />
+    <ClInclude Include="googleproto\msg.Msg_GroupFriendRecv_Head.pb.h" />
+    <ClInclude Include="googleproto\msg.Msg_Pack.pb.h" />
+    <ClInclude Include="googleproto\msg.Msg_PbGet.pb.h" />
+    <ClInclude Include="googleproto\msg.Msg_PbPushGroupMsg.pb.h" />
+    <ClInclude Include="googleproto\msg.Msg_PbSend.pb.h" />
+    <ClInclude Include="googleproto\msg.Msg_PbSend_Head.pb.h" />
+    <ClInclude Include="googleproto\msg.Msg_PushNotify_Recv_5.pb.h" />
+    <ClInclude Include="googleproto\msg.Msg_Recv_Head.pb.h" />
+    <ClInclude Include="googleproto\msg.Msg_Timefontsign_Head.pb.h" />
+    <ClInclude Include="googleproto\msg.Music.pb.h" />
+    <ClInclude Include="googleproto\msg.NoticeMsg.pb.h" />
+    <ClInclude Include="googleproto\msg.NoticeMsgDetail.pb.h" />
+    <ClInclude Include="googleproto\msg.NoticeMsgOr.pb.h" />
+    <ClInclude Include="googleproto\msg.NoticeMsgQd.pb.h" />
+    <ClInclude Include="googleproto\msg.OutGroup.pb.h" />
+    <ClInclude Include="googleproto\msg.PicUpPrivateImage.pb.h" />
+    <ClInclude Include="googleproto\msg.PicUpPrivateImageDetail1.pb.h" />
+    <ClInclude Include="googleproto\msg.PicUpPrivateImageDetail2.pb.h" />
+    <ClInclude Include="googleproto\msg.PrepareUpGroupImage.pb.h" />
+    <ClInclude Include="googleproto\msg.PrepareUpGroupImageDetail.pb.h" />
+    <ClInclude Include="googleproto\msg.PrepareUpGroupVoice.pb.h" />
+    <ClInclude Include="googleproto\msg.PrepareUpGroupVoiceDetail.pb.h" />
+    <ClInclude Include="googleproto\msg.PrepareUpPrivateImage.pb.h" />
+    <ClInclude Include="googleproto\msg.PrepareUpPrivateImageDetail.pb.h" />
+    <ClInclude Include="googleproto\msg.PriMsg_Context.pb.h" />
+    <ClInclude Include="googleproto\msg.PriMsg_Context_Arr.pb.h" />
+    <ClInclude Include="googleproto\msg.PriMsg_Context_Arr_Base.pb.h" />
+    <ClInclude Include="googleproto\msg.PriMsg_Pack.pb.h" />
+    <ClInclude Include="googleproto\msg.PriMsg_PbSend.pb.h" />
+    <ClInclude Include="googleproto\msg.PriSimage.pb.h" />
+    <ClInclude Include="googleproto\msg.PriSimagedetail.pb.h" />
+    <ClInclude Include="googleproto\msg.PrivateImage.pb.h" />
+    <ClInclude Include="googleproto\msg.PrivateVoicemsg.pb.h" />
+    <ClInclude Include="googleproto\msg.Pull_PbGet.pb.h" />
+    <ClInclude Include="googleproto\msg.QQInformation.pb.h" />
+    <ClInclude Include="googleproto\msg.Quote.pb.h" />
+    <ClInclude Include="googleproto\msg.QuoteOrg.pb.h" />
+    <ClInclude Include="googleproto\msg.RegSysP.pb.h" />
+    <ClInclude Include="googleproto\msg.RegSystemMsgNew.pb.h" />
+    <ClInclude Include="googleproto\msg.SearchCard1.pb.h" />
+    <ClInclude Include="googleproto\msg.SearchCard2.pb.h" />
+    <ClInclude Include="googleproto\msg.Sendshowimg.pb.h" />
+    <ClInclude Include="googleproto\msg.Sendshowimgdetail.pb.h" />
+    <ClInclude Include="googleproto\msg.Sendshowimgdetail41.pb.h" />
+    <ClInclude Include="googleproto\msg.Sendshowimgdetail42.pb.h" />
+    <ClInclude Include="googleproto\msg.Sendshowmsgimg.pb.h" />
+    <ClInclude Include="googleproto\msg.Sendshowmsgimgdetail.pb.h" />
+    <ClInclude Include="googleproto\msg.Showfont.pb.h" />
+    <ClInclude Include="googleproto\msg.Showfont2.pb.h" />
+    <ClInclude Include="googleproto\msg.Simage.pb.h" />
+    <ClInclude Include="googleproto\msg.Simagedetail.pb.h" />
+    <ClInclude Include="googleproto\msg.Target.pb.h" />
+    <ClInclude Include="googleproto\msg.TempTarget.pb.h" />
+    <ClInclude Include="googleproto\msg.Text.pb.h" />
+    <ClInclude Include="googleproto\msg.TimeAndSeq.pb.h" />
+    <ClInclude Include="googleproto\msg.TrigDarenRank.pb.h" />
+    <ClInclude Include="googleproto\msg.TrigDarenRankDetail.pb.h" />
+    <ClInclude Include="googleproto\msg.Upfile.pb.h" />
+    <ClInclude Include="googleproto\msg.UpGroupImage.pb.h" />
+    <ClInclude Include="googleproto\msg.UpGroupImageDetail.pb.h" />
+    <ClInclude Include="googleproto\msg.UpGroupVoice.pb.h" />
+    <ClInclude Include="googleproto\msg.UpGroupVoiceDetail.pb.h" />
+    <ClInclude Include="googleproto\msg.UploadPVoice.pb.h" />
+    <ClInclude Include="googleproto\msg.UploadPVoiceDetail.pb.h" />
+    <ClInclude Include="googleproto\msg.VerifyFriendmsg.pb.h" />
+    <ClInclude Include="googleproto\msg.Voicemsg.pb.h" />
+    <ClInclude Include="googleproto\msg.WholeInformation.pb.h" />
+    <ClInclude Include="googleproto\msg.WithDraw1.pb.h" />
+    <ClInclude Include="googleproto\msg.WithDraw2.pb.h" />
+    <ClInclude Include="googleproto\msg.WithDraw3.pb.h" />
+    <ClInclude Include="googleproto\msg.WithDraw4.pb.h" />
+    <ClInclude Include="IgnoreDlg.h" />
+    <ClInclude Include="MemDC.h" />
+    <ClInclude Include="ModifyTitle.h" />
+    <ClInclude Include="MoreAdminList.h" />
+    <ClInclude Include="MsgDlg.h" />
+    <ClInclude Include="OtherConfig.h" />
+    <ClInclude Include="PictureEx.h" />
+    <ClInclude Include="PureAcceptRequestDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SelectUpImg.h" />
+    <ClInclude Include="SHA1.h" />
+    <ClInclude Include="ShadeButtonST.h" />
+    <ClInclude Include="StandUpDlg.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="ZBase64.h" />
+    <ClInclude Include="晨风qq机器人.h" />
+    <ClInclude Include="晨风qq机器人Dlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AcceptRequestDlg.cpp" />
+    <ClCompile Include="AdminList.cpp" />
+    <ClCompile Include="androidtcp\AndroidQQ.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="androidtcp\crypt.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="androidtcp\JceInputStream.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="androidtcp\JceOutputStream.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="androidtcp\JceStruct_Factory.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="androidtcp\_Pack.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="androidtcp\_Unpack.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="AutoReplyRule.cpp" />
+    <ClCompile Include="BCMenu.cpp" />
+    <ClCompile Include="BtnST.cpp" />
+    <ClCompile Include="CeXDib.cpp" />
+    <ClCompile Include="ColorInput.cpp" />
+    <ClCompile Include="ColorSMSInput.cpp" />
+    <ClCompile Include="ColorURLInput.cpp" />
+    <ClCompile Include="Decoder.cpp" />
+    <ClCompile Include="FontInfSetDlg.cpp" />
+    <ClCompile Include="googleproto\msg.AppOrDeny.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.AppOrDenyFriend.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.AppOrDenyFriendDetail.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Approve.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.ApproveFriend.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.DarenRank.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.DownPCGroupPVoice.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.DownPCGroupPVoiceDetail.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.DownPCGroupResultPVoice.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.DownPCGroupResultPVoiceDetail.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.DownPVoice.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.DownPVoiceDetail.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.DownPVoiceDetail2.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.DownResultPVoice.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.DownResultPVoiceDetail.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.DownResultPVoiceDetail2.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Face.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.FaceWord.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.FeedbackPrivateImage.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.FeedbackPrivateImageDetail.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.FeedbackPrivateImageDetail2.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Font.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Gift.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Image.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.JoinGroup.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.KickInf.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.KickInf_2.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.KickoutFromDis.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.KickStruct.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.KickStruct_2.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.KickStruct_5.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.KickStruct_5_2.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.LatestSysP.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.LatestSysP_10.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.LatestSysP_10_50.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.LatestSysP_msg.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Money.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Moneydetail.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Moneydetail2.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Msg_Context.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Msg_Context_Arr.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Msg_Context_Arr_Base.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Msg_GroupFriendRecv_Head.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Msg_Pack.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Msg_PbGet.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Msg_PbPushGroupMsg.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Msg_PbSend.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Msg_PbSend_Head.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Msg_PushNotify_Recv_5.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Msg_Recv_Head.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Msg_Timefontsign_Head.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Music.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.NoticeMsg.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.NoticeMsgDetail.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.NoticeMsgOr.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.NoticeMsgQd.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.OutGroup.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.PicUpPrivateImage.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.PicUpPrivateImageDetail1.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.PicUpPrivateImageDetail2.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.PrepareUpGroupImage.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.PrepareUpGroupImageDetail.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.PrepareUpGroupVoice.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.PrepareUpGroupVoiceDetail.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.PrepareUpPrivateImage.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.PrepareUpPrivateImageDetail.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.PriMsg_Context.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.PriMsg_Context_Arr.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.PriMsg_Context_Arr_Base.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.PriMsg_Pack.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.PriMsg_PbSend.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.PriSimage.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.PriSimagedetail.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.PrivateImage.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.PrivateVoicemsg.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Pull_PbGet.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.QQInformation.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Quote.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.QuoteOrg.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.RegSysP.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.RegSystemMsgNew.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.SearchCard1.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.SearchCard2.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Sendshowimg.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Sendshowimgdetail.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Sendshowimgdetail41.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Sendshowimgdetail42.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Sendshowmsgimg.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Sendshowmsgimgdetail.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Showfont.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Showfont2.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Simage.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Simagedetail.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Target.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.TempTarget.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Text.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.TimeAndSeq.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.TrigDarenRank.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.TrigDarenRankDetail.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Upfile.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.UpGroupImage.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.UpGroupImageDetail.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.UpGroupVoice.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.UpGroupVoiceDetail.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.UploadPVoice.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.UploadPVoiceDetail.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.VerifyFriendmsg.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Voicemsg.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.WholeInformation.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.WithDraw1.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.WithDraw2.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.WithDraw3.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.WithDraw4.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="IgnoreDlg.cpp" />
+    <ClCompile Include="MockHtmlDlg.cpp" />
+    <ClCompile Include="ModifyTitle.cpp" />
+    <ClCompile Include="MoreAdminList.cpp" />
+    <ClCompile Include="MsgDlg.cpp" />
+    <ClCompile Include="OtherConfig.cpp" />
+    <ClCompile Include="PictureEx.cpp" />
+    <ClCompile Include="publichttp.cpp" />
+    <ClCompile Include="PureAcceptRequestDlg.cpp" />
+    <ClCompile Include="SelectUpImg.cpp" />
+    <ClCompile Include="SHA1.cpp" />
+    <ClCompile Include="ShadeButtonST.cpp" />
+    <ClCompile Include="StandUpDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ZBase64.cpp" />
+    <ClCompile Include="晨风qq机器人.cpp" />
+    <ClCompile Include="晨风qq机器人Dlg.cpp" />
+    <ClCompile Include="查.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="晨风qq机器人.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="晨风qq机器人.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

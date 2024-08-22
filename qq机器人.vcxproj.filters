@@ -1,0 +1,836 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="AcceptRequestDlg.cpp" />
+    <ClCompile Include="AdminList.cpp" />
+    <ClCompile Include="AutoReplyRule.cpp" />
+    <ClCompile Include="BCMenu.cpp" />
+    <ClCompile Include="ColorInput.cpp" />
+    <ClCompile Include="FontInfSetDlg.cpp" />
+    <ClCompile Include="IgnoreDlg.cpp" />
+    <ClCompile Include="ModifyTitle.cpp" />
+    <ClCompile Include="MoreAdminList.cpp" />
+    <ClCompile Include="MsgDlg.cpp" />
+    <ClCompile Include="OtherConfig.cpp" />
+    <ClCompile Include="PictureEx.cpp" />
+    <ClCompile Include="publichttp.cpp" />
+    <ClCompile Include="SelectUpImg.cpp" />
+    <ClCompile Include="StandUpDlg.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="晨风qq机器人.cpp" />
+    <ClCompile Include="晨风qq机器人Dlg.cpp" />
+    <ClCompile Include="查.cpp" />
+    <ClCompile Include="googleproto\msg.AppOrDeny.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Approve.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Face.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Font.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Image.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.JoinGroup.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.KickInf.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.KickInf_2.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.KickStruct.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.KickStruct_2.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.KickStruct_5.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.KickStruct_5_2.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.LatestSysP.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.LatestSysP_msg.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Msg_Context.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Msg_Context_Arr.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Msg_Context_Arr_Base.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Msg_GroupFriendRecv_Head.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Msg_Pack.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Msg_PbGet.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Msg_PbPushGroupMsg.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Msg_PbSend.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Msg_PbSend_Head.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Msg_PushNotify_Recv_5.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Msg_Recv_Head.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.OutGroup.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Pull_PbGet.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.RegSysP.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.RegSystemMsgNew.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Target.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.TempTarget.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Text.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.TimeAndSeq.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="androidtcp\_Pack.cpp">
+      <Filter>androidtcp</Filter>
+    </ClCompile>
+    <ClCompile Include="androidtcp\_Unpack.cpp">
+      <Filter>androidtcp</Filter>
+    </ClCompile>
+    <ClCompile Include="androidtcp\AndroidQQ.cpp">
+      <Filter>androidtcp</Filter>
+    </ClCompile>
+    <ClCompile Include="androidtcp\crypt.cpp">
+      <Filter>androidtcp</Filter>
+    </ClCompile>
+    <ClCompile Include="androidtcp\JceInputStream.cpp">
+      <Filter>androidtcp</Filter>
+    </ClCompile>
+    <ClCompile Include="androidtcp\JceOutputStream.cpp">
+      <Filter>androidtcp</Filter>
+    </ClCompile>
+    <ClCompile Include="androidtcp\JceStruct_Factory.cpp">
+      <Filter>androidtcp</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.QQInformation.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.WholeInformation.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.LatestSysP_10_50.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.LatestSysP_10.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Music.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.UpGroupImageDetail.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.UpGroupImage.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.PrepareUpGroupImage.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.PrepareUpGroupImageDetail.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="SHA1.cpp" />
+    <ClCompile Include="googleproto\msg.Voicemsg.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="Decoder.cpp" />
+    <ClCompile Include="googleproto\msg.PrivateVoicemsg.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.DownResultPVoiceDetail2.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.DownResultPVoiceDetail.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.DownResultPVoice.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.DownPVoiceDetail2.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.DownPVoiceDetail.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.DownPVoice.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="ZBase64.cpp" />
+    <ClCompile Include="googleproto\msg.UploadPVoice.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.UploadPVoiceDetail.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorSMSInput.cpp" />
+    <ClCompile Include="googleproto\msg.PrepareUpGroupVoice.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.PrepareUpGroupVoiceDetail.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.UpGroupVoice.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.UpGroupVoiceDetail.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.VerifyFriendmsg.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.AppOrDenyFriendDetail.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.AppOrDenyFriend.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.ApproveFriend.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.NoticeMsgOr.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.NoticeMsgDetail.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.NoticeMsg.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Upfile.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.NoticeMsgQd.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Moneydetail.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Money.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Moneydetail2.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.DownPCGroupResultPVoiceDetail.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.DownPCGroupResultPVoice.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.DownPCGroupPVoice.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.DownPCGroupPVoiceDetail.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.DarenRank.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.TrigDarenRankDetail.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.TrigDarenRank.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.SearchCard2.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.SearchCard1.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Gift.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="PureAcceptRequestDlg.cpp" />
+    <ClCompile Include="googleproto\msg.PrivateImage.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.PrepareUpPrivateImage.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.PrepareUpPrivateImageDetail.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.FeedbackPrivateImage.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.FeedbackPrivateImageDetail.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.PicUpPrivateImage.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.PicUpPrivateImageDetail2.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.PicUpPrivateImageDetail1.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.FeedbackPrivateImageDetail2.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="BtnST.cpp" />
+    <ClCompile Include="CeXDib.cpp" />
+    <ClCompile Include="ShadeButtonST.cpp" />
+    <ClCompile Include="googleproto\msg.Msg_Timefontsign_Head.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.WithDraw1.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.WithDraw2.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.WithDraw3.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.WithDraw4.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.KickoutFromDis.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.FaceWord.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Simagedetail.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Simage.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.PriMsg_Pack.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.PriMsg_Context_Arr.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.PriMsg_Context.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.PriSimage.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.PriSimagedetail.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.PriMsg_Context_Arr_Base.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.PriMsg_PbSend.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Sendshowimgdetail42.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Sendshowimgdetail41.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Sendshowimgdetail.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Showfont.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Sendshowimg.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Showfont2.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Sendshowmsgimgdetail.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.Sendshowmsgimg.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="MockHtmlDlg.cpp" />
+    <ClCompile Include="ColorURLInput.cpp" />
+    <ClCompile Include="googleproto\msg.Quote.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+    <ClCompile Include="googleproto\msg.QuoteOrg.pb.cc">
+      <Filter>googleproto</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AcceptRequestDlg.h" />
+    <ClInclude Include="AdminList.h" />
+    <ClInclude Include="AutoReplyRule.h" />
+    <ClInclude Include="BCMenu.h" />
+    <ClInclude Include="ColorInput.h" />
+    <ClInclude Include="FontInfSetDlg.h" />
+    <ClInclude Include="IgnoreDlg.h" />
+    <ClInclude Include="ModifyTitle.h" />
+    <ClInclude Include="MoreAdminList.h" />
+    <ClInclude Include="MsgDlg.h" />
+    <ClInclude Include="OtherConfig.h" />
+    <ClInclude Include="PictureEx.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SelectUpImg.h" />
+    <ClInclude Include="StandUpDlg.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="晨风qq机器人.h" />
+    <ClInclude Include="晨风qq机器人Dlg.h" />
+    <ClInclude Include="googleproto\msg.AppOrDeny.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Approve.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Face.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Font.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Image.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.JoinGroup.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.KickInf.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.KickInf_2.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.KickStruct.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.KickStruct_2.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.KickStruct_5.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.KickStruct_5_2.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.LatestSysP.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.LatestSysP_msg.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Msg_Context.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Msg_Context_Arr.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Msg_Context_Arr_Base.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Msg_FriendRecv_Head.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Msg_GroupFriendRecv_Head.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Msg_Pack.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Msg_PbGet.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Msg_PbPushGroupMsg.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Msg_PbSend.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Msg_PbSend_Head.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Msg_PushNotify_Recv_5.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Msg_Recv_Head.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.OutGroup.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Pull_PbGet.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.RegSysP.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.RegSystemMsgNew.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Target.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.TempTarget.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Text.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.TimeAndSeq.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="androidtcp\_Pack.h">
+      <Filter>androidtcp</Filter>
+    </ClInclude>
+    <ClInclude Include="androidtcp\_Unpack.h">
+      <Filter>androidtcp</Filter>
+    </ClInclude>
+    <ClInclude Include="androidtcp\AndroidQQ.h">
+      <Filter>androidtcp</Filter>
+    </ClInclude>
+    <ClInclude Include="androidtcp\crypt.h">
+      <Filter>androidtcp</Filter>
+    </ClInclude>
+    <ClInclude Include="androidtcp\formatstruct.h">
+      <Filter>androidtcp</Filter>
+    </ClInclude>
+    <ClInclude Include="androidtcp\JceInputStream.h">
+      <Filter>androidtcp</Filter>
+    </ClInclude>
+    <ClInclude Include="androidtcp\JceOutputStream.h">
+      <Filter>androidtcp</Filter>
+    </ClInclude>
+    <ClInclude Include="androidtcp\JceStruct_Factory.h">
+      <Filter>androidtcp</Filter>
+    </ClInclude>
+    <ClInclude Include="androidtcp\publicshare.h">
+      <Filter>androidtcp</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.QQInformation.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.WholeInformation.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.LatestSysP_10_50.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.LatestSysP_10.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Music.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.UpGroupImageDetail.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.UpGroupImage.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.PrepareUpGroupImage.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.PrepareUpGroupImageDetail.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="SHA1.h" />
+    <ClInclude Include="googleproto\msg.Voicemsg.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.PrivateVoicemsg.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.DownResultPVoiceDetail2.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.DownResultPVoiceDetail.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.DownResultPVoice.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.DownPVoiceDetail2.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.DownPVoiceDetail.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.DownPVoice.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="ZBase64.h" />
+    <ClInclude Include="googleproto\msg.UploadPVoice.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.UploadPVoiceDetail.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorSMSInput.h" />
+    <ClInclude Include="googleproto\msg.PrepareUpGroupVoice.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.PrepareUpGroupVoiceDetail.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.UpGroupVoice.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.UpGroupVoiceDetail.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.VerifyFriendmsg.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.AppOrDenyFriendDetail.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.AppOrDenyFriend.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.ApproveFriend.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.NoticeMsgOr.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.NoticeMsgDetail.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.NoticeMsg.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Upfile.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.NoticeMsgQd.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Money.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Moneydetail.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Moneydetail2.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.DownPCGroupResultPVoiceDetail.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.DownPCGroupResultPVoice.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.DownPCGroupPVoice.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.DownPCGroupPVoiceDetail.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.DarenRank.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.TrigDarenRankDetail.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.TrigDarenRank.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.SearchCard2.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.SearchCard1.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Gift.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="PureAcceptRequestDlg.h" />
+    <ClInclude Include="googleproto\msg.PrivateImage.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.PrepareUpPrivateImage.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.PrepareUpPrivateImageDetail.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.FeedbackPrivateImage.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.FeedbackPrivateImageDetail.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.PicUpPrivateImage.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.PicUpPrivateImageDetail2.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.PicUpPrivateImageDetail1.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.FeedbackPrivateImageDetail2.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="MemDC.h" />
+    <ClInclude Include="BtnST.h" />
+    <ClInclude Include="CeXDib.h" />
+    <ClInclude Include="ShadeButtonST.h" />
+    <ClInclude Include="googleproto\msg.Msg_Timefontsign_Head.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.WithDraw1.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.WithDraw2.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.WithDraw3.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.WithDraw4.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.KickoutFromDis.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.FaceWord.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Simage.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Simagedetail.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.PriMsg_Pack.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.PriMsg_Context_Arr.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.PriMsg_Context.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.PriSimage.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.PriSimagedetail.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.PriMsg_Context_Arr_Base.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.PriMsg_PbSend.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Sendshowimgdetail42.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Sendshowimgdetail41.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Sendshowimgdetail.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Showfont.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Sendshowimg.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Showfont2.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Sendshowmsgimgdetail.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.Sendshowmsgimg.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorURLInput.h" />
+    <ClInclude Include="googleproto\msg.Quote.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+    <ClInclude Include="googleproto\msg.QuoteOrg.pb.h">
+      <Filter>googleproto</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="晨风qq机器人.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\My.rc2" />
+    <None Include="res\xdd.ico" />
+    <None Include="Res\人品计算.txt" />
+    <None Include="Res\优先设定的回复内容.txt" />
+    <None Include="Res\周公解梦全集.txt" />
+    <None Include="Res\天气.txt" />
+    <None Include="Res\如何不注册也能玩成语接龙和修改名片.txt" />
+    <None Include="Res\姓名配对.txt" />
+    <None Include="Res\定时执行重新登录等指令.txt" />
+    <None Include="Res\帮助.txt" />
+    <None Include="Res\快递编码.txt" />
+    <None Include="Res\成语大全.txt" />
+    <None Include="Res\抢答题.txt" />
+    <None Include="Res\抽签.txt" />
+    <None Include="res\晨风QQ机器人.ico" />
+    <None Include="Res\晨风qq机器人使用说明.txt" />
+    <None Include="Res\机器人管理员命令大全.txt" />
+    <None Include="Res\自动回复设置文件.txt" />
+    <None Include="Res\自定义小游戏.txt" />
+    <None Include="Res\自定义帮助文件.重命名.txt" />
+    <None Include="Res\自定义广告尾巴.txt" />
+    <None Include="Res\输入替换.txt" />
+    <None Include="Res\输出替换.txt" />
+    <None Include="Res\晨风机器人变量大全.txt" />
+    <None Include="Res\更多个性配置.txt" />
+    <None Include="res\bkgroud.bmp" />
+    <None Include="Res\背景图片.jpg" />
+    <None Include="Res\窗口布局.txt" />
+    <None Include="Res\登录1.bmp" />
+    <None Include="Res\登录2.bmp" />
+    <None Include="Res\群聊时不回复或者没显示回复的处理办法.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="googleproto">
+      <UniqueIdentifier>{a71b130f-bc6d-48a5-ade1-87099c8f5c49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="androidtcp">
+      <UniqueIdentifier>{84bf6002-f7a1-40d2-bf6b-5a11cb034b3a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
